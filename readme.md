@@ -6,8 +6,8 @@ HamlPy is not a template engine in itself but simply a compiler which will conve
 
 But wait, what is Haml?  Haml is an incredible template engine written in Ruby used a lot in the Rails community.  You can read more about it [here](http://www.haml-lang.com "Haml Home").
 
-#### Fallback to template.haml when requesting template.html
-small edit here, with a fallback to a .haml extension when the template is not found, made so the class based generic views works out of the box without having to specify a template_name.
+##### Fork: Fallback to template.haml when requesting template.html
+Small edit here, with a fallback to a .haml extension when the template is not found, made so the class based generic views works out of the box without having to specify a template_name.
 
 It should be changed in the Generic views app instead but since it is related to hamlpy it is simpler to add it here.
 

@@ -60,7 +60,7 @@ def get_haml_loader(loader):
 
                 return html, template_path
 
-            # not a valid extension and not html
+            # not a valid extension or not html
             raise TemplateDoesNotExist(template_name)
 
         load_template_source.is_usable = True

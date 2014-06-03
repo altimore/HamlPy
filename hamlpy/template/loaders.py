@@ -50,6 +50,12 @@ def get_haml_loader(loader):
                         haml_source, template_path = super(Loader, self).load_template_source(
                             self._generate_template_name(name, extension), *args, **kwargs
                         )
+                        else:
+                            hamlParser = hamlpy.Compiler(options_dict=options_dict)
+                            html = hamlParser.process(haml_source)
+    
+                            return html, template_path
+
                     
                 else:
                     hamlParser = hamlpy.Compiler(options_dict=options_dict)
